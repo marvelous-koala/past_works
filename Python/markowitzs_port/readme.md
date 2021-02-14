@@ -26,7 +26,7 @@
 ![image](https://user-images.githubusercontent.com/76254564/107885643-dc52c700-6f3e-11eb-8d0e-372f5f200d37.png)
 ![image](https://user-images.githubusercontent.com/76254564/107885615-bb8a7180-6f3e-11eb-8e54-be0b8bf2fc22.png)
 
-  def modelfit(alg, train, predictors, target, useTrainCV=True, cv_folds=5, early_stopping_rounds=50):
+    def modelfit(alg, train, predictors, target, useTrainCV=True, cv_folds=5, early_stopping_rounds=50):
 
       if useTrainCV:
           xgb_param = param
@@ -58,7 +58,7 @@
 ##### NLP(Non - linear programming)를 사용하기 때문에 heuristic 기법(유전 알고리즘)을 활용
 
 ##### 공분산 계산기(마코위츠 방법론)
-  def cov_maker(ratio, ini_date):
+    def cov_maker(ratio, ini_date):
       df = pd.DataFrame()
 
       for k in range(0, len(file_list)):
@@ -81,7 +81,7 @@
       return cova2.values[0][0]
       
 ##### 유전 알고리즘
-  def ga_optimizer(ini_date, days):
+    def ga_optimizer(ini_date, days):
 
       algorithm_param = {'max_num_iteration': 2,
                      'population_size':100,
@@ -111,8 +111,8 @@
       return opt
       
 ##### 계산시간이 오래 걸리는 관계로 병렬연산 처리 진행
-  from multiprocessing import Pool
-  while current < limit:
+    from multiprocessing import Pool
+    while current < limit:
       if __name__ == '__main__':
           with Pool(cores) as p:
               finale = p.map(mjh, mulit_list)
