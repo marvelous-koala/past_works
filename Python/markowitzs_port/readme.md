@@ -17,10 +17,10 @@
 #### LSTM 모델
 ##### 향후 1~5일의 S&P 500 종가를 예측하기 위한 LSTM 모델링, 정확도 향상을 위해 Xgboost 모델과 앙상블 시도
 
-  pyplot.plot(history.history['loss'], label='train')
-  pyplot.plot(history.history['val_loss'], label='test')
-  pyplot.legend()
-  pyplot.show()
+    pyplot.plot(history.history['loss'], label='train')
+    pyplot.plot(history.history['val_loss'], label='test')
+    pyplot.legend()
+    pyplot.show()
   
 ![image](https://user-images.githubusercontent.com/76254564/107885637-cd6c1480-6f3e-11eb-9691-405c439bf4ad.png)
 ![image](https://user-images.githubusercontent.com/76254564/107885643-dc52c700-6f3e-11eb-8d0e-372f5f200d37.png)
